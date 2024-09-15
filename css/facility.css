@@ -1,0 +1,127 @@
+.facility-title{
+  background-image: url("../img3/共用施設/1.jpg");
+  background-position: 50% 60%;
+}
+.fa-heading{
+  background-color: rgba(143,148,156,0.1);
+  padding: 40px;
+  margin-bottom: 80px;
+}
+.fa-heading h4{
+  margin-bottom: 10px;
+}
+.fa-heading .fa-btn{
+  display: grid;
+  grid-template-columns:1fr 1fr;
+  gap: 20px;
+}
+.fa-heading .fa-btn li{
+  text-align: center;
+}
+.fa-heading .fa-btn a{
+  position: relative;
+  color: white;
+  background-color: #8F949C;
+  display: block;
+  padding: 20px 0;
+  transition: all 0.5s;
+}
+.fa-btn a:hover .arrow-box{
+  right: 8%;
+}
+.fa-btn a:hover .arrow-box .arrow{
+  width: 25px;
+}
+.fa-btn1{
+  padding-bottom: 30px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 30px;
+}
+
+.facility1-title{
+  color: #fff;
+  background:linear-gradient(to right,#8F949C, #E1E6ED);
+  padding: 10px;
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.facility-item:not(:last-of-type){
+  margin-bottom: 80px;
+}
+
+.facility-list{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 25px;
+}
+.facility-list img{
+  height: 300px;
+  object-fit: cover;
+}
+.facility-list .fa-title{
+  font-size: 16px;
+}
+.facility-list p{
+  line-height: 1.1;
+}
+.facility-1,.facility-2,.facility-3,#fa-1{
+  margin-bottom: 120px;
+}
+.facility-1 .section-sub-title,
+.facility-2 .section-sub-title,
+.facility-3 .section-sub-title{
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.fa1-1{
+  margin-bottom: 80px;
+}
+.fa1-1 p{
+  margin-bottom: 30px;
+}
+.fa1-1 img{
+  height: 400px;
+  object-fit: cover;
+}
+
+
+@media (max-width: 960px) {
+  .facility-list{
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+@media (max-width: 768px) {
+  .fa-heading .fa-btn{
+    grid-template-columns: 1fr;
+  }
+
+  .facility-1 .section-sub-title,
+.facility-2 .section-sub-title,
+.facility-3 .section-sub-title{
+  font-size: 20px;
+  }
+  .facility1-title{
+    font-size: 20px;
+  }
+  .facility-1,.facility-2,.facility-3,#fa-1{
+    margin-bottom: 80px;
+  }
+
+}
+@media (max-width:500px){
+  .facility-list{
+    grid-template-columns: 1fr;
+  }
+  .facility-list img{
+    height: 300px;
+  }
+  .fa1-1-img{
+    grid-template-columns:  1fr;
+  }
+  .fa1-1 img,.fa1-2 img{
+    height: 300px;
+  }
+}
